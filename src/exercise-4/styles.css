@@ -1,0 +1,22 @@
+main {
+  padding: 2rem;
+  height: calc(100vh - 4rem);
+  width: unset;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+p {
+  transition: 0.5s;
+  width: 70vw;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
