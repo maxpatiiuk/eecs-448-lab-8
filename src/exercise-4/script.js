@@ -1,4 +1,4 @@
-const paragraph = document.getElementsByTagName('p')[0];
+const textarea = document.getElementsByTagName('textarea')[0];
 
 const inputs = Array.from(document.getElementsByTagName('input'));
 
@@ -21,7 +21,7 @@ const handleChange = () =>
     .map((input) => [input.name, input.value])
     .map(([name, value]) => [name, (mapper[name] ?? defaultMapper)(value)])
     .forEach(([name, value]) => {
-      paragraph.style[name] = value;
+      textarea.style[name] = value;
     });
 
 handleChange();
