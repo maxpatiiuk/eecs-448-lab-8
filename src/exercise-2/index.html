@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>EECS 448 Lab 08</title>
+    <meta name="robots" content="noindex,nofollow" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <menu>
+      <li>
+        <button type="button">
+          <span>&lt;</span>
+        </button>
+      </li>
+      <li aria-hidden="true">
+        <span class="spacer"></span>
+      </li>
+      <li>
+        <button type="button">
+          <span>&gt;</span>
+        </button>
+      </li>
+    </menu>
+    <div id="slider">
+      <main></main>
+    </div>
+    <div id="overlay">
+      <dialog open aria-modal="true">
+        <h1>Slider Controls</h1>
+        <p>
+          Slider can be controlled by scrolling horizontally or by pressing the
+          left/right buttons on the screen
+        </p>
+        <button class="dialog-button">Start</button>
+      </dialog>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

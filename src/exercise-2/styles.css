@@ -1,0 +1,76 @@
+body {
+  overflow: hidden;
+}
+
+menu {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  inset: 0;
+  display: flex;
+  pointer-events: none;
+}
+
+#slider {
+  overflow-y: scroll;
+}
+
+main {
+  width: max-content;
+}
+
+img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.spacer {
+  flex: 1;
+}
+
+button {
+  --angle: 90deg;
+  --background: #000;
+
+  background: linear-gradient(var(--angle), var(--background), transparent);
+  border: 0;
+  padding: 3rem;
+  padding-left: 5rem;
+  font-size: 2rem;
+  cursor: pointer;
+  pointer-events: all;
+}
+
+li:first-child button {
+}
+
+li:last-child button {
+  --angle: 270deg;
+}
+
+button:hover {
+  --background: #000e;
+}
+
+#overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  height: 100vh;
+  background: #0009;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+dialog {
+  border: 3px solid #fff;
+}
+
+.dialog-button {
+  padding: 1rem !important;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
